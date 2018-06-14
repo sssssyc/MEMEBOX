@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/*logo*/
+.logo {
+  width: 1348px;
+}
+
+.logo img {
+  margin: 32px 0 32px 90px;
+}
+
+/*中间注册*/
+.login_bg {
+  width: 1348px;
+  height: 520px;
+  background: url(../images/PC_.jpg) no-repeat;
+  position: relative;
+}
+
+.login_bg .login {
+  width: 410px;
+  height: 387px;
+  background: #fff;
+  position: absolute;
+  top: 60px;
+  right: 83px;
+}
+
+.login_bg .login h3 {
+  font-size: 17px;
+  color: #333333;
+  margin-top: 32px;
+  margin-left: 30px;
+}
+
+.login_bg .login h3 a {
+  font-size: 12px;
+  color: #3d86f4;
+  float: right;
+  margin-right: 36px;
+}
+
+.login_bg .login input {
+  width: 348px;
+  height: 38px;
+  font-size: 12px;
+  color: #6d6d6d;
+  line-height: 38px;
+  border: 1px solid #afafaf;
+  margin-left: 30px;
+  outline: none;
+}
+
+.login_bg .login input:nth-of-type(1) {
+  margin-top: 40px;
+  text-indent: 10px;
+}
+
+.login_bg .login input:nth-of-type(2) {
+  margin-top: 15px;
+  text-indent: 10px;
+}
+
+.login_bg .login input:nth-of-type(3) {
+  width: 230px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+}
+
+.login_bg .login .yan {
+  width: 115px;
+  height: 38px;
+  font-size: 12px;
+  color: #ff5073;
+  float: right;
+  line-height: 38px;
+  margin-right: 28px;
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid #ff5073;
+  border-radius: 5px;
+}
+
+.login_bg .login #zhuce {
+  width: 348px;
+  height: 38px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 38px;
+  margin-left: 30px;
+  text-align: center;
+  background: #ff5073;
+  outline: none;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.login_bg .login p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.login_bg .login p a {
+  color: #ff5073;
+}
+
+.login_bg .login .login_b {
+  width: 410px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #dcdcdc;
+}
+
+.login_bg .login .login_b p {
+  font-size: 12px;
+  color: #333333;
+  float: left;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 30px;
+}
+
+.login_bg .login .login_b a img {
+  float: left;
+  margin-top: 12px;
+  margin-left: 40px;
+}

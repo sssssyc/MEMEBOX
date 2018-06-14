@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+/*底部上*/
+.bottom{
+	width: 1348px;
+	background: #f3f1f2;
+	border-bottom: #eaeaea;
+	overflow: hidden;
+}
+.bottom dl{
+	float: left;
+	margin: 40px 125px 48px 125px;
+}
+.bottom dl dd img{
+	margin: 0 auto;
+}
+.bottom dl dt{
+	margin-top: 18px;
+	font-size: 18px;
+	color: #333333;
+}
+
+/*底部中*/
+.footer{
+	width: 1348px;
+	overflow: hidden;
+}
+.footer_left {
+	width: 445px;
+	float: left;
+}
+.footer_left p{
+	font-size: 12px;
+	color: #333333;
+	margin-top: 192px;
+	text-align: center;
+}
+.footer_left div{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 15px 5px 70px 5px;
+	position: relative;
+}
+.footer_left div img:nth-child(2){
+	position: absolute;
+	top: -125px;
+	left: 115px;
+	display: none;
+}
+.footer_left div:hover img:nth-child(2){
+	display: block;
+}
+.footer_left img:nth-of-type(1){
+	margin-left: 152px;
+}
+.footer_right{
+	float: left;
+}
+.footer_right ul{
+	float: left;
+	margin-top: 40px;
+	border-left: 1px solid #eaeaea;
+	padding-left: 35px;
+}
+.footer_right ul:nth-of-type(1){
+	padding-right: 95px;
+}
+.footer_right ul:nth-of-type(2),.footer_right ul:nth-of-type(3){
+	padding-right: 110px;
+}
+.footer_right ul li a{
+	font-size: 12px;
+	line-height: 34px;
+	color: #5c3333;
+}
+.footer_right ul li a:hover{
+	color: #ff5073;
+}
+.footer_right ul li:nth-of-type(1){
+	font-size: 17px;
+	color: #5c3333;
+	line-height: 47px;
+}
+
+/*底部下*/
+.foot{
+	width: 1348px;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+}
+.foot h3,.foot p{
+	font-size: 12px;
+	color: #333333;
+}
+.foot h3{
+	margin-top: 20px;
+	text-align: center;
+}
+.foot p{
+	margin-top: 18px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.foot p i{
+	margin: 0 35px;
+	font-style: normal;
+}
+.foot p span{
+	margin: 0 35px;
+	height: 17px;
+}
+/*copy*/
+.copy{
+	width: 1348px;
+}
+.copy p{
+	height: 40px;
+	line-height: 40px;
+}
+.copy_tu{
+	float: left;
+	margin-left: 135px;
+}
+.copy p:first-child{
+	font-size: 10px;
+	color: #aaaaaa;
+	float: left;
+	margin-left: 150px;
+}
+.copy p:last-child{
+	font-size: 12px;
+	color: #aaaaaa;
+	float: left;
+}
+.copy p:last-child a{
+	font-size: 12px;
+	color: #333333;
+}
+.copy p:last-child a:hover{
+	color: #ff5073;
+}

@@ -1,0 +1,117 @@
+ @mixin wh ($value_w, $value_h) {
+     width: $value_w;
+     height: $value_h;
+ }
+ 
+ @mixin text ($value_size, $value_color) {
+     font-size: $value_size;
+     color: $value_color;
+ }
+ 
+ $width:1348px;
+ /*logo*/
+ 
+ .logo {
+     width: $width;
+     img {
+         margin: 32px 0 32px 90px;
+     }
+ }
+ /*中间注册*/
+ 
+ .login_bg {
+     $text: 12px;
+     @include wh($width, 520px);
+     background: url(../images/PC_.jpg) no-repeat;
+     position: relative;
+     .login {
+         @include wh(410px, 387px);
+         background: #fff;
+         position: absolute;
+         top: 60px;
+         right: 83px;
+         h3 {
+             @include text(17px, #333333);
+             margin-top: 32px;
+             margin-left: 30px;
+             a {
+                 @include text($text, #3d86f4);
+                 float: right;
+                 margin-right: 36px;
+             }
+         }
+         input {
+             @include wh(348px, 38px);
+             @include text($text, #6d6d6d);
+             line-height: 38px;
+             border: 1px solid #afafaf;
+             margin-left: 30px;
+             outline: none;
+         }
+         input:nth-of-type(1) {
+             margin-top: 40px;
+             text-indent: 10px;
+         }
+         input:nth-of-type(2) {
+             margin-top: 15px;
+             text-indent: 10px;
+         }
+         input:nth-of-type(3) {
+             width: 230px;
+             margin-top: 15px;
+             margin-bottom: 15px;
+             text-indent: 10px;
+         }
+         .yan {
+             @include wh(115px, 38px);
+             @include text($text, #ff5073);
+             float: right;
+             line-height: 38px;
+             margin-right: 28px;
+             margin-top: 15px;
+             text-align: center;
+             border: 1px solid #ff5073;
+             border-radius: 5px;
+         }
+         #zhuce {
+             @include wh(348px, 38px);
+             @include text(18px, #fff);
+             line-height: 38px;
+             margin-left: 30px;
+             text-align: center;
+             background: #ff5073;
+             outline: none;
+             margin-top: 0;
+             cursor: pointer;
+         }
+         p {
+             font-size: 13px;
+             text-align: center;
+             margin-top: 9px;
+             a {
+                 color: #ff5073;
+             }
+         }
+         .login_b {
+             @include wh(410px, 50px);
+             position: absolute;
+             bottom: 0;
+             border-top: 1px solid #dcdcdc;
+             p {
+                 @include text($text, #333333);
+                 float: left;
+                 margin: 0;
+                 height: 50px;
+                 line-height: 50px;
+                 margin-left: 30px;
+             }
+             a {
+                 img {
+                     float: left;
+                     margin-top: 12px;
+                     margin-left: 40px;
+                 }
+             }
+         }
+     }
+ }

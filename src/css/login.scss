@@ -1,0 +1,114 @@
+ @mixin wh ($value_w, $value_h) {
+     width: $value_w;
+     height: $value_h;
+ }
+ 
+ @mixin text ($value_size, $value_color) {
+     font-size: $value_size;
+     color: $value_color;
+ }
+ 
+ $width:1348px;
+ /*logo*/
+ 
+ .logo {
+     width: $width;
+     img {
+         margin: 32px 0 32px 90px;
+     }
+ }
+ /*中间登录*/
+ 
+ .login_bg {
+     $text: 12px;
+     @include wh($width, 520px);
+     background: url(../images/PC_.jpg) no-repeat;
+     position: relative;
+     .login {
+         @include wh(410px, 360px);
+         background: #fff;
+         position: absolute;
+         top: 60px;
+         right: 83px;
+         h3 {
+             @include text(17px, #333333);
+             margin-top: 32px;
+             margin-left: 30px;
+             a {
+                 @include text($text, #3d86f4);
+                 float: right;
+                 margin-right: 36px;
+             }
+         }
+         input {
+             @include wh(348px, 38px);
+             @include text($text, #6d6d6d);
+             line-height: 38px;
+             border: 1px solid #afafaf;
+             margin-left: 30px;
+             outline: none;
+         }
+         input:nth-of-type(1) {
+             margin-top: 40px;
+             text-indent: 10px;
+         }
+         input:nth-of-type(2) {
+             margin-top: 20px;
+             margin-bottom: 20px;
+             text-indent: 10px;
+         }
+        #denglu {
+             @include wh(348px, 38px);
+             @include text(18px, #fff);
+             line-height: 38px;
+             margin-left: 30px;
+             text-align: center;
+             background: #ff5073;
+             display: block;
+             margin-top: 0;
+             outline: none;
+             cursor: pointer;
+         }
+         p{
+             span{
+                 float: left;
+                 margin-left: 27px;
+                 margin-top: 13px;
+                 font-size: 20px;
+                 color: #FF5073;
+             }
+             a {
+             @include text($text, #33335c);
+             float: right;
+             margin-top: 25px;
+             margin-right: 30px;
+         }
+           a:hover {
+             color: #ff5073;
+         }
+         
+         }
+       
+         .login_b {
+             @include wh(410px, 50px);
+             position: absolute;
+             bottom: 0;
+             border-top: 1px solid #dcdcdc;
+             p {
+                 @include text($text, #333333);
+                 float: left;
+                 margin: 0;
+                 height: 50px;
+                 line-height: 50px;
+                 margin-left: 30px;
+             }
+             a {
+                 img {
+                     float: left;
+                     margin-top: 12px;
+                     margin-left: 40px;
+                 }
+             }
+         }
+     }
+ }

@@ -1,0 +1,282 @@
+#cart, #cart #aside_1 {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+#cart #aside_1 {
+  position: fixed;
+  top: 0px;
+  right: 40px;
+  width: 285px;
+  min-height: 100%;
+  box-shadow: 0 0 15px #888;
+  display: none;
+  background: #fff;
+  overflow: auto;
+}
+
+#cart #aside_1 li:first-child {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 5px;
+  border-bottom: 1px solid #999;
+}
+
+#cart #aside_1 li:first-child #guan {
+  float: right;
+  font-style: normal;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#cart #aside_1 #aside_1_li2 {
+  width: 285px;
+}
+
+#cart #aside_1 #aside_1_li2 img {
+  margin: 0 auto;
+}
+
+#cart #aside_1 #aside_1_li2 p {
+  width: 285px;
+  text-align: center;
+}
+
+#cart #aside_1 li {
+  width: 236px;
+  height: 130px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+  overflow: auto;
+}
+
+#cart #aside_1 li #aside_1_img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-top: 5px;
+}
+
+#cart #aside_1 li #aside_1_zi {
+  width: 136px;
+  height: 100px;
+  float: left;
+  margin-top: 5px;
+}
+
+#cart #aside_1 li #aside_1_zi h3 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+#cart #aside_1 li #aside_1_zi a {
+  width: 20px;
+  height: 20px;
+  background: #f2f2f2;
+  color: #000;
+  float: left;
+  text-align: center;
+  border: 1px solid #999;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#cart #aside_1 li #aside_1_zi a:hover {
+  background: #FF5073;
+  color: #fff;
+}
+
+#cart #aside_1 li #aside_1_zi input {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: 10px;
+  text-align: center;
+  outline: none;
+  margin-left: 5px;
+}
+
+#cart #aside_1 li #aside_1_zi p {
+  width: 136px;
+  margin: 0;
+  text-indent: 5px;
+  margin-top: 55px;
+  color: #FF5073;
+  overflow: hidden;
+}
+
+#cart #aside_1 li #aside_1_zi p i {
+  color: #000000;
+  cursor: pointer;
+  float: right;
+  margin-right: 20px;
+}
+
+#cart #aside_1 li #aside_1_zi p i:hover {
+  color: #FF5073;
+}
+
+#cart #aside_1 #aside_1_js {
+  position: fixed;
+  bottom: 0px;
+  display: none;
+  margin: 0 auto;
+}
+
+#cart #aside_1 #aside_1_js a {
+  width: 285px;
+  height: 40px;
+  background: #FF5073;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+
+#cart #aside_1 img {
+  width: 100px;
+  height: 100px;
+}
+
+#cart #aside_2 li {
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#cart #aside_2 li a {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+#cart #aside_2 li:nth-child(1) {
+  height: 123px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+
+#cart #aside_2 li:nth-child(5) {
+  margin-top: 100px;
+}
+
+#cart #aside_2 li:nth-of-type(2) p,
+#cart #aside_2 li:nth-of-type(3) p,
+#cart #aside_2 li:nth-of-type(4) p,
+#cart #aside_2 li:nth-of-type(5) p {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  width: 92px;
+  height: 38px;
+  line-height: 38px;
+  position: absolute;
+  left: -92px;
+  top: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+#cart #aside_2 #li1 h3,
+#cart #aside_2 #li6 h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-left: 8px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#cart #aside_2 li i {
+  font-size: 22px;
+  color: #fff;
+  margin-left: 8px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#cart #aside_3 {
+  position: fixed;
+  right: 40px;
+  bottom: 0px;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #000;
+  background: #fff;
+  display: none;
+}
+
+#cart #aside_3_header {
+  width: 400px;
+  height: 48px;
+  border: 1px solid #000;
+  line-height: 48px;
+  cursor: move;
+  background: skyblue;
+}
+
+#cart #aside_3_header img {
+  float: left;
+}
+
+#cart #aside_3_header p {
+  margin-left: 10px;
+  font-size: 20px;
+  float: left;
+}
+
+#cart #aside_3_header #guan1 {
+  float: right;
+  font-style: normal;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+#cart #aside_3_content {
+  width: 400px;
+  height: 350px;
+}
+
+#cart #aside_3_content p {
+  font-size: 12px;
+  margin: 5px;
+}
+
+#cart #aside_3_content form {
+  margin: 10px 50px;
+}
+
+#cart #aside_3_content form input {
+  width: 200px;
+  height: 20px;
+  margin: 5px;
+}
+
+#cart #aside_3_content form textarea {
+  width: 200px;
+  height: 80px;
+}
+
+#cart #aside_3_span1 {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin: 50px;
+  background: #F2F2F2;
+}

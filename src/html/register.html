@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	</head>
+	
+	<body>
+		<!--logo-->
+		<div class="logo"><a href="index.html"><img src="../images/logo.png"></a></div>
+		
+		<!--中间注册-->
+		<div class="login_bg">
+			<div class="login">
+				<h3>
+					登录MEMEBOX帐号
+					<a href="login.html">立即登录>></a>
+				</h3>
+<!--				<form action="register.php" method="get">
+-->					<input type="text" placeholder="请输入有效手机号" name="username" id="input3"/>
+					<input type="text" placeholder="请输入3~8位密码" name="password" id="input4"/>
+					<input type="text" placeholder="请输入验证码" />
+					<a href="#" class="yan"/>发送验证码</a>
+				<!--	<input type="button" name="zhu" id="zhu" value="zhuce" />-->
+				<button id="zhuce">注册</button>
+				<!--</form>-->
+				<p>注册即表示您已同意<a href="#">美美箱用户协议</a></p>
+				<div class="login_b">
+					<p>第三方账号登录：</p>
+					<a href="#"><img src="../images/wechatIn.png"></a>
+					<a href="#"><img src="../images/weiboIn.png"></a>
+					<a href="#"><img src="../images/qqIn.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="../js/jquery-1.11.3.js"></script>		
+		<script>
+			$("#zhuce").click(function(){
+				$.get("register1.php", { username:$("#input3").val( )},function(data){
+						var num = Number(data);
+						if( num>=1){
+							alert( "用户名已存在，请重新注册");
+						}else{
+							$.get("register.php", { username:$("#input3").val( ) , password:$("#input4").val( ) },function(result){
+									alert(result);
+								});
+						}
+				});
+	});
+		</script>
+		
+		
+		
+		<!--底部上-->
+		<div class="bottom">
+			<dl>
+				<dd><img src="../images/untitled1.png"</dd>
+				<dt><b>100%正品</b></dt>
+			</dl>
+			<dl>
+				<dd><img src="../images/untitled2.png"</dd>
+				<dt><b>优质低价</b></dt>
+			</dl>
+			<dl>
+				<dd><img src="../images/untitled3.png"</dd>
+				<dt><b>极速发货</b></dt>
+			</dl>
+			<dl>
+				<dd><img src="../images/untitled4.png"</dd>
+				<dt><b>退换无忧</b></dt>
+			</dl>
+		</div>
+		
+		<!--底部中-->
+		<div class="footer">
+			<div class="footer_left">
+				<p>关于我们</p>
+				<div><img src="../images/untitled5.png" /><img src="../images/download.png"></div>
+				<div><img src="../images/untitled6.png" /><img src="../images/download.png"></div>
+				<div><img src="../images/untitled7.png" /><img src="../images/download.png"></div>
+			</div>
+			<div class="footer_right">
+				<ul>
+					<li><b>关于美美箱</b></li>
+					<li><a href="#">美美全球</a></li>
+					<li><a href="#">品牌优势</a></li>
+					<li><a href="#">消费保障</a></li>
+				</ul>
+				<ul >
+					<li><b>帮助中心</b></li>
+				    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">账户相关</a></li>
+                    <li><a href="#">包邮政策</a></li>
+                    <li><a href="#">支付相关</a></li>
+                    <li><a href="#">物流相关</a></li>
+                    <li><a href="#">退换政策</a></li>
+				</ul>
+				<ul >
+					<li ><b>服务协议</b></li>
+                    <li><a href="#">服务协议</a></li>
+                    <li><a href="#">个人网申协议</a></li>
+                    <li><a href="#">隐私政策</a></li>
+				</ul>
+				<ul >
+					<li ><b>联系我们</b></li>
+                    <li><a href="#">商务合作</a></li>
+                    <li><a href="#">分销合作</a></li>
+                    <li><a href="#">加入我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--底部下-->
+		<div class="foot">
+			<h3>联系客服 </h3>
+			<p>客服时间 : 周一~周五(9:00 - 21:00)<i>客服热线: 400-720-9967</i><span>客服邮箱 :kf@memeboxglobal.com</span></p>
+		</div>
+		
+		<!--copy-->
+		<div class="copy">
+			<p> &copy; 2015 Memebox Corporation. All Rights Reserved. </p>
+			<a href="#" class="copy_tu"><img src="../images/icon.gif"/></a>
+			<p> 蜜米柏克思（上海）商贸有限公司 上海市杨浦区政立路415号中航天盛广场A座6楼 沪ICP备14043341号<a href="#">营业执照</a></p>
+		</div>
+		
+	</body>
+</html>

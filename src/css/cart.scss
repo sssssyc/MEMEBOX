@@ -1,0 +1,265 @@
+// @mixin pos() {
+//   position: fixed;
+//   top: 0px;
+//   right: 0px;
+////   bottom: 0px;
+// }
+// 
+@mixin icon() {
+    font-size: 22px;
+    color: #fff;
+    margin-left: 8px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#cart {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    #aside_1 {
+        @extend #cart;
+        position: fixed;
+        top: 0px;
+        right: 40px;
+        width: 285px;
+        min-height: 100%;
+        box-shadow: 0 0 15px #888;
+        display: none;
+        background: #fff;
+        overflow: auto;
+        li:first-child {
+//          width: 285px;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 5px;
+            border-bottom: 1px solid #999;
+            #guan {
+                float: right;
+                font-style: normal;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+        }
+        #aside_1_li2 {
+            width: 285px;
+            img {
+                margin: 0 auto;
+            }
+            p {
+                width: 285px;
+                text-align: center;
+            }
+        }
+        li {
+            width: 236px;
+            height: 130px;
+            margin: 0 auto;
+            border-bottom: 1px solid #999;
+             overflow: auto;
+            #aside_1_img {
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin-top: 5px;
+            }
+            #aside_1_zi {
+                width: 136px;
+                height: 100px;
+                float: left;
+                margin-top: 5px;
+                h3 {
+                    font-size: 16px;
+                    font-weight: 100;
+                    margin-left: 10px;
+                }
+                a {
+                    width: 20px;
+                    height: 20px;
+                    background: #f2f2f2;
+                    color: #000;
+                    float: left;
+                    text-align: center;
+                    border: 1px solid #999;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    margin-top: 10px;
+                    margin-left: 5px;
+                }
+                a:hover{
+                    background: #FF5073;
+                    color: #fff;
+                }
+                input {
+                    width: 20px;
+                    height: 20px;
+                    float: left;
+                    margin-top: 10px;
+                    text-align: center;
+                    outline: none;
+                    margin-left: 5px;
+                }
+                p {
+                    width: 136px;
+                    margin: 0;
+                    text-indent: 5px;
+                    margin-top: 55px;
+                    color: #FF5073;
+                    overflow: hidden;
+                    i {
+                        color: #000000;
+                        cursor: pointer;
+                        float: right;
+                        margin-right: 20px;
+                    }
+                    i:hover {
+                        color: #FF5073;
+                    }
+                }
+            }
+        }
+         #aside_1_js {
+            position: fixed;
+            bottom:0px;
+            display: none;
+            margin: 0 auto;
+            a {
+                width: 285px;
+                height: 40px;
+                background: #FF5073;
+                color: #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 40px;
+                display: block;
+            }
+        }
+        img {
+            width: 100px;
+            height: 100px
+        }
+    }
+    #aside_2 li {
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        a {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+    }
+    #aside_2 li:nth-child(1) {
+        height: 123px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+    #aside_2 li:nth-child(5) {
+        margin-top: 100px;
+    }
+    #aside_2 li:nth-of-type(2) p,
+    #aside_2 li:nth-of-type(3) p,
+    #aside_2 li:nth-of-type(4) p,
+    #aside_2 li:nth-of-type(5) p {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        width: 92px;
+        height: 38px;
+        line-height: 38px;
+        position: absolute;
+        left: -92px;
+        top: 6px;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999;
+    }
+    #aside_2 #li1 h3,
+    #aside_2 #li6 h3 {
+        @include icon();
+        font-size: 12px;
+        font-weight: 100;
+    }
+//  #aside_2 #li1 h4 {
+//      @include icon();
+//      font-size: 12px;
+//      color: #FFF;
+//      background: red;
+//      border-radius: 50%;
+//      width: 20px;
+//      height: 20px;
+//      line-height: 20px;
+//      text-align: center;
+//  }
+    #aside_2 li i {
+        @include icon();
+    }
+    #aside_3 {
+        position: fixed;
+        right: 40px;
+        bottom: 0px;
+        width: 400px;
+        height: 400px;
+        border: 1px solid #000;
+        background: #fff;
+        display: none;
+    }
+    #aside_3_header {
+        width: 400px;
+        height: 48px;
+        border: 1px solid #000;
+        line-height: 48px;
+        cursor: move;
+        background: skyblue;
+        img {
+            float: left;
+        }
+        p {
+            margin-left: 10px;
+            font-size: 20px;
+            float: left;
+        }
+        #guan1 {
+            float: right;
+            font-style: normal;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    }
+    #aside_3_content {
+        width: 400px;
+        height: 350px;
+        p {
+            font-size: 12px;
+            margin: 5px;
+        }
+        form {
+            margin: 10px 50px;
+            input {
+                width: 200px;
+                height: 20px;
+                margin: 5px;
+            }
+            textarea {
+                width: 200px;
+                height: 80px;
+            }
+        }
+    }
+    #aside_3_span1 {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 5px 10px;
+        border: 1px solid #000;
+        cursor: pointer;
+        margin: 50px;
+        background: #F2F2F2;
+    }
+}
